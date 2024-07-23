@@ -1,0 +1,26 @@
+#Remove Data folder recursively for exclusions to apply
+data/*
+experiments/*
+
+#skip any README, .py or .gitkeep
+!*README*
+!.gitkeep
+!*.py
+!*.sh
+
+# Temporary OS files
+.DS_Store
+
+# TensorFlow Checkpoint files
+checkpoint
+*.index
+*.data*
+*.v2
+
+#manual log files
+*.log
+
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*$py.class
